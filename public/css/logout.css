@@ -1,0 +1,9 @@
+.btn-pink{
+  border-radius: 60px;
+  border: 1px solid #ff6d6d;
+  background: #ff6d6d;
+  height: 115px;
+  width: 115px;
+  color: white;
+  margin:auto;
+}
