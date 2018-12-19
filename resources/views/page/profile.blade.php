@@ -1,6 +1,10 @@
 @extends('layouts.master')
 @section('title','Mi Perfil')
 @section('content')
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <style>
 .btn-grey{
     background-color:#D8D8D8;
@@ -56,13 +60,8 @@
           <input type="file" class="text-center center-block file-upload">
         </div>
       </div>
-      <div class="col-11 col-md-5"><h1>{{ Auth::user()->username}}</h1></div>
-    </div>
-
-    <div class="row">
-  		<div class="col-10 col-md-3"><!--left col-->
-
-
+      <div class="col-11 col-md-5">
+        <h1>{{ Auth::user()->username}}</h1>
       </hr><br>
 
           <ul class="list-group">
@@ -72,10 +71,12 @@
             <li class="list-group-item text-right"><span class="pull-left"><strong>Calificados</strong></span> 37</li>
             <li class="list-group-item text-right"><span class="pull-left"><strong>Planificados</strong></span> 8</li>
           </ul>
+      </div>
+    </div>
 
+    <div class="row">
 
-        </div><!--/col-3-->
-    	  <div class="col-8">
+    	  <div class="col-12">
           <div class="row">
 
       			<div class="col-12 col-md-6">
@@ -162,18 +163,18 @@
       				</div>
 
       			</div>
-            <div class="col-8 col-md-3 offset-2">
+            <div class="col-12 col-md-5 offset-1">
               <br>
       				<div class="rating-block">
       					<h4>Calificacion promedio</h4>
       					<h2 class="bold padding-bottom-7">4.3 <small>/ 5</small></h2>
-      					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+      					<button type="button" class="btn btn-success btn-sm" aria-label="Left Align">
       					  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       					</button>
-      					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+      					<button type="button" class="btn btn-success btn-sm" aria-label="Left Align">
       					  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       					</button>
-      					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+      					<button type="button" class="btn btn-success btn-sm" aria-label="Left Align">
       					  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       					</button>
       					<button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
@@ -198,42 +199,13 @@
       						</div>
       						<div class="col-9">
       							<div class="review-block-rate">
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
       								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       								</button>
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
       								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       								</button>
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-      								</button>
-      								<button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-      								</button>
-      								<button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
-      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-      								</button>
-      							</div>
-      							<div class="review-block-title">this was nice in buy</div>
-      							<div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
-      						</div>
-      					</div>
-      					<hr/>
-      					<div class="row">
-      						<div class="col-3">
-      							<img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
-      							<div class="review-block-name"><a href="#">nktailor</a></div>
-      							<div class="review-block-date">January 29, 2016<br/>1 day ago</div>
-      						</div>
-      						<div class="col-9">
-      							<div class="review-block-rate">
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-      								</button>
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
-      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-      								</button>
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
       								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       								</button>
       								<button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
@@ -256,13 +228,42 @@
       						</div>
       						<div class="col-9">
       							<div class="review-block-rate">
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
       								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       								</button>
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
       								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       								</button>
-      								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
+      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      								</button>
+      								<button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      								</button>
+      								<button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      								</button>
+      							</div>
+      							<div class="review-block-title">this was nice in buy</div>
+      							<div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+      						</div>
+      					</div>
+      					<hr/>
+      					<div class="row">
+      						<div class="col-3">
+      							<img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
+      							<div class="review-block-name"><a href="#">nktailor</a></div>
+      							<div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+      						</div>
+      						<div class="col-9">
+      							<div class="review-block-rate">
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
+      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      								</button>
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
+      								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      								</button>
+      								<button type="button" class="btn btn-success btn-xs" aria-label="Left Align">
       								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       								</button>
       								<button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
@@ -281,8 +282,7 @@
       		</div>
         </div> <!-- col-8 columna derecha-->
     </div><!--/row-->
-
-
+</div>
 
 <script>
 $(document).ready(function() {

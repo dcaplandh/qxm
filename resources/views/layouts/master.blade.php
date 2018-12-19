@@ -10,9 +10,9 @@
     <title>@yield('title')</title>
 
 
-
+    <script src="{{ asset('js/jquery.js') }}" defer></script>
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="http://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
@@ -22,8 +22,7 @@
 </head>
 <body>
     <div id="app">
-        @include('partials.header_logout')
-
+       @include('partials.header')
         <main class="py-4">
             @yield('content')
 
@@ -32,8 +31,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/jquery.js') }}" defer></script>
-    <script src="{{ asset('js/popper.js') }}" defer></script>
-    <script src="{{ asset('js/bootstrap.js') }}" defer></script>
+
+    <script src="{{ asset('js/popper.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
 </body>
 </html>
