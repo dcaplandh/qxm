@@ -124,5 +124,8 @@
 
 
   </div>
+
+@include('partials.prices')
+
 @include('partials.footer_logout')
 @endsection
