@@ -1,5 +1,5 @@
 @extends('layouts.logout')
-@section('title','QPM - Login')
+@section('title','QXM - Login')
 
 @section('content')
 <div class="container">
