@@ -9,16 +9,16 @@
 
     <title>@yield('title')</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/logout.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -30,13 +30,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        <img style="width:200px;" src="/img/logo.jpg" alt="QPM">
+                    </a>
+                    <ul class="flex-right navbar-nav mr-auto">
 
                     </ul>
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        <img style="width:150px;" src="/img/logo.jpg" alt="QPM">
-                    </a>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
@@ -59,7 +59,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        Cerrar sesión
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -75,7 +75,14 @@
 
         <main class="py-4">
             @yield('content')
+
         </main>
+
     </div>
+      
+    <!-- Scripts -->
+    <script src="{{ asset('js/jquery.js') }}" defer></script>
+    <script src="{{ asset('js/popper.js') }}" defer></script>
+    <script src="{{ asset('js/bootstrap.js') }}" defer></script>
 </body>
 </html>

@@ -1,0 +1,102 @@
+*{
+  box-sizing: content-box;
+  margin:0;
+}
+
+.valores img{
+  width:80%;
+}
+.valores h3{
+  color: #c4689d;
+  color: #fff;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+.valores h5{
+  color: #000;
+  font-family: Helvetica;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.padding-cero{
+  padding: 0;
+}
+
+.carrusel{
+  height:60vh;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 40px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+.carousel-caption h5 {
+    font-weight: 600;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.carousel-caption p {
+    font-weight: 600;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.row.explain{
+  margin-bottom: 20px;
+}
+.explain-title{
+  color:white;
+  font-size: 22px;
+  padding:3px;
+  font-style: italic;
+}
+.explain-title-left{
+  border-top-left-radius:15px;
+  border-bottom-left-radius: 15px;
+}
+.explain-title-right{
+  border-top-right-radius:15px;
+  border-bottom-right-radius: 15px;
+}
+.explain .explain-ball{
+  border-radius: 50px;
+  width: 15px;
+  height: 20px;
+  font-size: 20px;
+}
+.explail-left{
+    background: #fc2d75;
+}
+.explail-right{
+    background: #4c70ff;
+}
+.explain .row{
+  font-size: 14px;
+  font-style: italic;
+  color: #444;
+}
+.explain-text{
+  margin: 30px 0;
+}
+.explain-video-left{
+  border:10px solid #fc2d75;
+  margin:0;
+  padding:0;
+}
+.explain-video-right{
+  border:10px solid #4c70ff;
+  margin:0;
+  padding:0;
+}
+
+@media (max-width:923px){
+  .carousel-caption h5 , .carousel-caption p{
+    display:none;
+  }
+}

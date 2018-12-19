@@ -4,7 +4,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-sm-10 col-md-8">
             <div class="">
                 <h2 class="text-center font-weight-bold font-italic">Iniciar sesión</h2>
 

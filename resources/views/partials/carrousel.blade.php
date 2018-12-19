@@ -5,7 +5,7 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="/img/servicio.jpg" alt="Construccion 1">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Creá tu proyecto</h5>
+        <h5>Empezá tu proyecto</h5>
         <p>Los servicios que necesitás por el precio que buscás</p>
       </div>
     </div>
@@ -21,7 +21,7 @@
     <div class="carousel-item">
       <img class="d-block w-100" src="/img/servicio3.jpg" alt="Construccion 3">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Podés contar o no con materiales</h5>
+        <h5>Con o sin materiales</h5>
         <p>Contactá a los profesionales y resolvé tus problemas</p>
       </div>
     </div>
