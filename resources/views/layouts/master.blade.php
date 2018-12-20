@@ -19,6 +19,8 @@
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/logout.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+
+    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
 </head>
 <body>
     <div id="app">

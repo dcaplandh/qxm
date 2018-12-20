@@ -20,3 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile','UserController@profile')->middleware('auth');
+
+Route::get('/project/create','ProjectController@create')->middleware('auth');
+Route::post('/project/create','ProjectController@store')->middleware('auth');
