@@ -1,4 +1,4 @@
-@extends('layouts.logout')
+@extends('layouts.global')
 @section('title','QXM - Registro')
 
 @section('content')
@@ -6,15 +6,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="">
-              <h2 class="text-center font-weight-bold font-italic">Registro</h2>
+              <h2 class="text-center font-weight-bold font-italic">Quiero ser parte</h2>
               <h6 class="text-center">* Datos Obligatorios</h6>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">Nombre*</label>
+                        <div class="form-group row d-flex justify-content-center d-flex justify-content-center">
+                            <label for="name" class="col-12 col-form-label text-center">Nombre*</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -27,8 +27,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="lastname" class="col-md-4 col-form-label text-md-right">Apellido*</label>
+                        <div class="form-group row d-flex justify-content-center">
+                            <label for="lastname" class="col-12 col-form-label text-center">Apellido*</label>
 
                             <div class="col-md-6">
                                 <input id="lastname" type="text" class="form-control{{ $errors->has('lastname') ? ' is-invalid' : '' }}" name="lastname" value="{{ old('lastname') }}" required >
@@ -41,8 +41,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="username" class="col-md-4 col-form-label text-md-right">Nombre de Usuario*</label>
+                        <div class="form-group row d-flex justify-content-center">
+                            <label for="username" class="col-12 col-form-label text-center">Nombre de Usuario*</label>
 
                             <div class="col-md-6">
                                 <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required >
@@ -55,8 +55,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">Email *</label>
+                        <div class="form-group row d-flex justify-content-center">
+                            <label for="email" class="col-12 col-form-label text-center">Email *</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -69,8 +69,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña *</label>
+                        <div class="form-group row d-flex justify-content-center">
+                            <label for="password" class="col-12 col-form-label text-center">Contraseña *</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -83,8 +83,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirmar Contraseña *</label>
+                        <div class="form-group row d-flex justify-content-center">
+                            <label for="password-confirm" class="col-12 col-form-label text-center">Confirmar Contraseña *</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>

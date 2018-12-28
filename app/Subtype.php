@@ -7,4 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Subtype extends Model
 {
     protected $guarded = [];
+
+    
 }

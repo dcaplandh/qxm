@@ -26,6 +26,9 @@
                         </li>
                     @endif
                 @else
+                  <li class="nav-item">
+                    <a class="nav-link" href="/project/create/"><ion-icon name="add"></ion-icon></a>
+                  </li>
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
@@ -33,7 +36,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item padding-cero text-center" href="/profile">Mi Perfil</a>
-                          <a class="dropdown-item padding-cero text-center" href="#">Mis proyectos</a>
+                          <a class="dropdown-item padding-cero text-center" href="/profile/projects">Mis proyectos</a>
                             <a class="dropdown-item padding-cero text-center" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">

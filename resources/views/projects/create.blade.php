@@ -1,17 +1,9 @@
-@extends('layouts.master')
+@extends('layouts.global')
 @section('title','Nuevo Proyecto')
 @section('content')
 <div class="container">
 <div class="row">
-  <div class="col-12 col-md-3">
-    <ul class="list-group">
-      <li class="list-group-item active">Mis Proyectos</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-  </div>
+  @include('partials.project_menu', ['active' => 'create'])
   <form method="post" action="" class="col-12 col-md-6">
   @csrf
   <div class="row">
@@ -68,7 +60,8 @@
       </label>
     </div>
   </div>
-  <div class="col-12 col-md-5">
+  <div class="col-12">
+    <hr><br>
     <button type="submit" class="btn btn-success">Crear proyecto</button>
   </div>
 

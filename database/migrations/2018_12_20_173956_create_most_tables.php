@@ -46,7 +46,7 @@ class CreateMostTables extends Migration
       $table->string('street_number')->nullable();
       $table->string('floor')->nullable();
       $table->string('house')->nullable();
-      $table->string('house_number')->nullable();
+      $table->string('extra')->nullable();
       $table->string('estate')->nullable();
       $table->string('province')->nullable();
       $table->string('country')->nullable();

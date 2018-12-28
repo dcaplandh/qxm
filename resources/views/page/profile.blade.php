@@ -66,10 +66,10 @@
 
           <ul class="list-group">
             <li class="list-group-item text-muted">Registros de trabajos <i class="fa fa-dashboard fa-1x"></i></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Publicados</strong></span> {{$publish}}</li>
             <li class="list-group-item text-right"><span class="pull-left"><strong>Presupuestados</strong></span> 125</li>
             <li class="list-group-item text-right"><span class="pull-left"><strong>Realizados</strong></span> 13</li>
             <li class="list-group-item text-right"><span class="pull-left"><strong>Calificados</strong></span> 37</li>
-            <li class="list-group-item text-right"><span class="pull-left"><strong>Planificados</strong></span> 8</li>
           </ul>
       </div>
     </div>
@@ -163,7 +163,7 @@
       				</div>
 
       			</div>
-            <div class="col-12 col-md-5 offset-1">
+            <div class="col-12 col-md-4">
               <br>
       				<div class="rating-block">
       					<h4>Calificacion promedio</h4>

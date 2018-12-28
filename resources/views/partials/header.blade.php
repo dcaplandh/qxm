@@ -8,7 +8,7 @@
             <!-- Left Side Of Navbar -->
 
             <a class="navbar-brand" href="{{ url('/') }}" style="float:left;">
-                <img style="width:150px;margin-top: -40px;" src="/img/logo.jpg" alt="QPM">
+                <img style="width:150px;margin-top: -15px;" src="/img/logo.jpg" alt="QPM">
             </a>
             <ul class="flex-right navbar-nav mr-auto">
 
@@ -36,7 +36,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item padding-cero text-center" href="/profile">Mi Perfil</a>
-                          <a class="dropdown-item padding-cero text-center" href="#">Mis proyectos</a>
+                          <a class="dropdown-item padding-cero text-center" href="/profile/projects">Mis proyectos</a>
                             <a class="dropdown-item padding-cero text-center" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">

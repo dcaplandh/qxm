@@ -94,6 +94,19 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
   margin:0;
   padding:0;
 }
+.servicio-img img{
+  width:70px;
+  height: 70px;
+}
+.btn-circle {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 70px;
+}
 
 @media (max-width:923px){
   .carousel-caption h5 , .carousel-caption p{

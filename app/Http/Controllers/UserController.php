@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Project;
 
 class UserController extends Controller
 {
@@ -84,6 +85,7 @@ class UserController extends Controller
 
     public function profile()
     {
-        return view('page.profile');
+        $publish = Project::where('user_id',\Auth::user()->id)->count();
+        return view('page.profile')->with(compact('publish'));
     }
 }
